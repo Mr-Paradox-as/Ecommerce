@@ -42,7 +42,7 @@ class Product(models.Model):
 
     slug = models.SlugField(max_length=255)
 
-    price = models.DecimalField(max_digits=4, decimal_places=2)
+    price = models.DecimalField(max_digits=8, decimal_places=8)
 
     image = models.ImageField(upload_to='images/')
 
